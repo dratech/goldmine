@@ -1,13 +1,15 @@
-## Building the application:
+# Building the application:
 With the command **mvn clean install**
 
 ---
 
-## Running the application
--With the **mvn spring-boot:run** command 
--Running the jar file in the /target folder with the command **java -jar energy-0.0.1-SNAPSHOT.jar**
+# Running the application
+* With the **mvn spring-boot:run** command 
+* Running the jar file in the /target folder with the command **java -jar energy-0.0.1-SNAPSHOT.jar**
 
 ---
+
+# Endpoints
 
 ## Postman collection with usage examples
 	https://www.getpostman.com/collections/660482ae9d98bbb8e290
@@ -16,20 +18,20 @@ With the command **mvn clean install**
 
 ## Customer endpoints:
 
-GET /customers/
+### GET /customers/
 
 Returns a list of the customers and their address
 
 ---
 
-GET /customers/{id}
+### GET /customers/{id}
 	Long id - id of the customer
 
 	Returns a customer with the given is
 
 ---
 
-PUT /customers/add
+### PUT /customers/add
 	Requires a json object with given properties
 	name : String 
 	address: 
