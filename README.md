@@ -19,7 +19,6 @@ With the command **mvn clean install**
 ## Customer endpoints:
 
 ### GET /customers/
-
 Returns a list of the customers and their address
 
 ---
@@ -57,7 +56,7 @@ Returns a list of the customers and their address
 
 ## Consumptions endpoints
 
-GET /consumptions/customers/{customerId}/year/{year}
+### GET /consumptions/customers/{customerId}/year/{year}
 	Long customerId - id of the customer
 	Integer year - year which the readings belongs to
 
@@ -65,7 +64,7 @@ GET /consumptions/customers/{customerId}/year/{year}
 
 ---
 
-GET /consumptions/customers/{customerId}/year/{year}/summary
+### GET /consumptions/customers/{customerId}/year/{year}/summary
 	Long customerId - id of the customer
 	Integer year - year which the readings belongs to
 
@@ -73,7 +72,7 @@ GET /consumptions/customers/{customerId}/year/{year}/summary
 
 ---
 
-GET /consumptions/customers/{id}/year/{year}/month/{month}
+### GET /consumptions/customers/{id}/year/{year}/month/{month}
 	Long customerId - id of the customer
 	Integer year - year which the readings belongs to
 	Integer month - month which the readings belongs to
@@ -82,7 +81,7 @@ GET /consumptions/customers/{id}/year/{year}/month/{month}
 
 ---
 
-PUT /consumptions/customers/{customerId}/add
+### PUT /consumptions/customers/{customerId}/add
 	Requires a json object with given properties
 	year : Integer
 	month : Integer
@@ -98,18 +97,17 @@ PUT /consumptions/customers/{customerId}/add
 
 ## Meter endpoints
 	
-GET /meters/
-
+### GET /meters/
 	Returns a list of the meters
 
 ---
 
-GET /meters/{meterId}
+### GET /meters/{meterId}
 	Long meterId - id of the meter
 	
 	Retruns the meter of the given id
 	
-PUT /meters/add
+### PUT /meters/add
 	Requires a json object with given properties
 	type              : String
 	version 		  : String
